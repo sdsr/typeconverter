@@ -28,7 +28,7 @@ public class ConverterController {
         return "converter-form";
     }
 
-    @PostMapping("converter/edit")
+    @PostMapping("/converter/edit")
     public String converterEdit(@ModelAttribute Form form, Model model) {
         IpPort ipPort = form.getIpPort();
         model.addAttribute("ipPort", ipPort);
